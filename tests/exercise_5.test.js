@@ -1,9 +1,13 @@
-import { jest } from '@jest/globals'
+import { vi } from 'vitest'
 
-const mockFunctions = jest.mock('exercise_functions')
+vi.mock('exercise_functions', () => ({
+  conditionFulfilled: vi.fn()
+}))
+
+import { conditionFulfilled } from 'exercise_functions'
 import { exercise_5_1, exercise_5_2 } from 'exercise_5'
 
-let mockConsole = jest.spyOn(console, 'log')
+const mockConsole = vi.spyOn(console, 'log')
 
 describe("Exercise 5", () => {
    describe.skip('5.1 ', () => {
@@ -35,7 +39,7 @@ describe("Exercise 5", () => {
          })
       }
    })
-   describe('5.2', () => {
+   describe.skip('5.2', () => {
       const exampleList = [
          {a: false, b: false, c: false, expected: true},
          // {a: false, b: false, c: true, expected: false},

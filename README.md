@@ -87,7 +87,7 @@ This repository can found on a number of public services:
 
 8 **Next exercise**
   Open the `exercise-1.tests.js` in the `tests`-folder and find the line that reads `describe.skip('exercise 1.2', () =>{`. Remove the `.skip` after `describe` then save the file.
-  Now, the tests should be run again and in addition to the first set of tests that still pass, a new set of tests should be run and fail. This means you are all set to complete the next exercise (`exercise-1-2`) that you find in the `exercise-1.js`-file.
+  Now, the tests should be run again and in addition to the first set of tests that still pass, a new set of tests should be run and fail. This means you are all set to complete the next exercise (`exercise_1_2`) that you find in the `exercise-1.js`-file.
 
 9 **Next chapter of exercises**
   When you have completed all the exercises in `exercises-1.js` you'll find the next chapter of exercises in `exercises-2.js` and more exercises are found by the same pattern. Don't forget to remove the `.skip`-extension on the describe of the exercises before you start coding the exercise.
