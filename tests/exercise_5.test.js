@@ -53,6 +53,7 @@ describe("Exercise 5", () => {
       for (let ex of exampleList) {
          describe(`when a is ${ex.a}, b is ${ex.b} and c is ${ex.c}`, () => {
             beforeEach(()=> {
+               vi.clearAllMocks()
                exercise_5_2(ex.a, ex.b, ex.c)
             })
             if (ex.expected === true) {
