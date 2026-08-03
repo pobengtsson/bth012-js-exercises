@@ -31,7 +31,7 @@
   "author": "Per-Olof Bengtsson",
   "license": "UNLICENSED",
   "devDependencies": {
-    "eslint": "^9.38.0",
-    "vitest": "^2.1.3"
+    "eslint": "^10.8.0",
+    "vitest": "^4.1.10"
   }
 }
